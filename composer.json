@@ -1,0 +1,80 @@
+{
+    "name": "jeffersongoncalves/laravel-erp",
+    "description": "Umbrella meta-package bundling the full Laravel ERP domain ecosystem (core, accounting, stock, selling, buying, manufacturing, assets, subcontracting, CRM, projects, support, quality, maintenance).",
+    "keywords": [
+        "laravel",
+        "erp",
+        "umbrella",
+        "bundle"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-erp",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "spatie/laravel-package-tools": "^1.15",
+        "jeffersongoncalves/laravel-erp-core": "dev-main",
+        "jeffersongoncalves/laravel-erp-accounting": "dev-main",
+        "jeffersongoncalves/laravel-erp-stock": "dev-main",
+        "jeffersongoncalves/laravel-erp-selling": "dev-main",
+        "jeffersongoncalves/laravel-erp-buying": "dev-main",
+        "jeffersongoncalves/laravel-erp-manufacturing": "dev-main",
+        "jeffersongoncalves/laravel-erp-assets": "dev-main",
+        "jeffersongoncalves/laravel-erp-subcontracting": "dev-main",
+        "jeffersongoncalves/laravel-erp-crm": "dev-main",
+        "jeffersongoncalves/laravel-erp-projects": "dev-main",
+        "jeffersongoncalves/laravel-erp-support": "dev-main",
+        "jeffersongoncalves/laravel-erp-quality": "dev-main",
+        "jeffersongoncalves/laravel-erp-maintenance": "dev-main"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9|^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Erp\\Suite\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Erp\\Suite\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Erp\\Suite\\ErpServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/jeffersongoncalves/laravel-erp/issues",
+        "source": "https://github.com/jeffersongoncalves/laravel-erp"
+    }
+}
