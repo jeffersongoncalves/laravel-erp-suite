@@ -1,6 +1,6 @@
 {
     "name": "jeffersongoncalves/laravel-erp",
-    "description": "Umbrella meta-package bundling the full Laravel ERP domain ecosystem (core, accounting, stock, selling, buying, manufacturing, assets, subcontracting, CRM, projects, support, quality, maintenance).",
+    "description": "Umbrella meta-package bundling the full Laravel ERP domain ecosystem (core, accounting, stock, selling, buying, manufacturing, assets, subcontracting, CRM, projects, support, quality, maintenance, HR).",
     "keywords": [
         "laravel",
         "erp",
@@ -31,7 +31,8 @@
         "jeffersongoncalves/laravel-erp-projects": "self.version",
         "jeffersongoncalves/laravel-erp-support": "self.version",
         "jeffersongoncalves/laravel-erp-quality": "self.version",
-        "jeffersongoncalves/laravel-erp-maintenance": "self.version"
+        "jeffersongoncalves/laravel-erp-maintenance": "self.version",
+        "jeffersongoncalves/laravel-erp-hr": "self.version"
     },
     "require-dev": {
         "larastan/larastan": "^2.9|^3.0",
